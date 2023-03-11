@@ -49,7 +49,7 @@
                             </ul>
                             <ul class="navbar-nav me-auto mb-lg-0">
                                 <li class="nav-item">
-                                    <asp:LinkButton CssClass="nav-item nav-link active" ID="HelloUserBtn" runat="server" Visible="True" Text="Please login" OnClick="HelloUserBtn_Click"></asp:LinkButton>
+                                    <asp:LinkButton CssClass="nav-item nav-link active" ID="HelloUserBtn" runat="server" Visible="True" Text="" OnClick="HelloUserBtn_Click"></asp:LinkButton>
                                 </li>
                                 <li class="nav-item">
                                     <asp:LinkButton CssClass="nav-item nav-link active" ID="LoginBtn" runat="server" OnClick="Login" Visible="True">&nbsp;<img src="images/check-in.png" width="30" height="30" /></asp:LinkButton>

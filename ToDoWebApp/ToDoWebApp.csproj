@@ -110,6 +110,7 @@
     <Content Include="NewTask.aspx" />
     <Content Include="NewUser.aspx" />
     <Content Include="Tasks.aspx" />
+    <Content Include="UserDetails.aspx" />
     <Content Include="Users.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -170,6 +171,13 @@
     </Compile>
     <Compile Include="ToDoMasterpage.Master.designer.cs">
       <DependentUpon>ToDoMasterpage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserDetails.aspx.cs">
+      <DependentUpon>UserDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDetails.aspx.designer.cs">
+      <DependentUpon>UserDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Users.aspx.cs">
       <DependentUpon>Users.aspx</DependentUpon>

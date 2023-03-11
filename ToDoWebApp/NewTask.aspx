@@ -33,17 +33,23 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TaskName" runat="server" placeholder="Task Name"></asp:TextBox>
+                                    <asp:Label ID="Label1" runat="server" Text="Task name:" ></asp:Label> &nbsp;
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" Enabled="true" runat="server" ErrorMessage="Please enter the task name" ControlToValidate="TaskName" CssClass="text-danger"></asp:RequiredFieldValidator>
+                                    <asp:TextBox CssClass="form-control mt-1" ID="TaskName" runat="server" placeholder="Task Name"></asp:TextBox>
                                 </div>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TaskDescription" runat="server" placeholder="Task description"></asp:TextBox>
+                                    <asp:Label ID="Label2" runat="server" Text="Task description:"></asp:Label>
+                                    <asp:RequiredFieldValidator Enabled="true" CssClass="text-danger" ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please enter task desciption" ControlToValidate="TaskDescription"></asp:RequiredFieldValidator>
+                                    <asp:TextBox CssClass="form-control mt-1" ID="TaskDescription" runat="server" placeholder="Task description"></asp:TextBox>
                                 </div>
                                 <div class="form-group">
-                                    <asp:DropDownList CssClass="form-control" ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="username" DataValueField="username"></asp:DropDownList>
+                                    <asp:Label ID="Label3" runat="server" Text="Designated to:"></asp:Label>
+                                    <asp:DropDownList CssClass="form-control mt-1" ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="username" DataValueField="username"></asp:DropDownList>
                                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:todoDBConnectionString %>" SelectCommand="SELECT [username] FROM [users]"></asp:SqlDataSource>
                                 </div>
                                 <div class="form-group">
-                                    <asp:DropDownList CssClass="form-control" ID="DropDownList2" runat="server" DataSourceID="SqlDataSource2" DataTextField="type" DataValueField="type"></asp:DropDownList>
+                                    <asp:Label ID="Label4" runat="server" Text="Status:"></asp:Label>
+                                    <asp:DropDownList CssClass="form-control mt-1" ID="DropDownList2" runat="server" DataSourceID="SqlDataSource2" DataTextField="type" DataValueField="type"></asp:DropDownList>
                                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:todoDBConnectionString %>" SelectCommand="SELECT [type] FROM [task_type]"></asp:SqlDataSource>
 
                                 </div>

@@ -25,7 +25,11 @@ namespace ToDoWebApp
                 createNewTask();
 
             }
-            Response.Redirect("Tasks.aspx");
+
+
+
+
+
         }
         protected void createNewTask()
         {
@@ -80,14 +84,8 @@ namespace ToDoWebApp
             }
         }
 
-        protected void TaskDescription_TextChanged(object sender, EventArgs e)
-        {
 
-        }
 
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
     }
 }
